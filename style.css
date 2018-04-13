@@ -1,0 +1,1371 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,400,500&subset=latin-ext');
+
+input[pseudo="-webkit-media-controls-timeline"]::-internal-track-segment-highlight-after{
+    background-color: red;
+}
+
+input[pseudo="-webkit-media-controls-volume-slider"]::-internal-track-segment-highlight-after {
+    background-color: rgb(66, 133, 244);
+}
+
+body {
+    margin: 0;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-color: red;
+    color: blue;
+    text-decoration: underline;
+    transition: 5s;
+}
+
+a:active{
+    color: red;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+a:visited {
+    color: darkviolet;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.header {
+    margin-left: -8px;
+    margin-top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.header__logotype__img {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    margin-left: 5.5%;
+    margin-top: 23px;
+    width: 184px;
+}
+
+.header__cart {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    margin-left: 84%;
+    margin-top: 28px;
+    width: 28px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.header__text {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    margin-left: 86.8%;
+    margin-top: 31px;
+    width: auto;
+    color: white;
+    font-size: 20px;
+}
+
+.menu__t__Breakfast {
+    position: relative;
+    margin-left: 5%;
+    margin-top: 120px;
+    font-size: 18px;
+}
+
+.menu__t__Snacks {
+    position: relative;
+    margin-left: 14%;
+    margin-top: -39px;
+    font-size: 18px;
+}
+
+.menu__t__Combos {
+    position: relative;
+    margin-left: 22%;
+    margin-top: -39px;
+    font-size: 18px;
+}
+
+.menu__t__Meal {
+    position: relative;
+    margin-left: 31.5%;
+    margin-top: -40px;
+    font-size: 18px;
+}
+
+.menu__t__Desserts {
+    position: relative;
+    margin-left: 39%;
+    margin-top: -39px;
+    font-size: 18px;
+}
+
+.Search__dishes__div {
+    position: relative;
+    display: inline-block;
+    margin-left: 76%;
+}
+
+.Search__dishes__div:before {
+    content: url("search__icon.png");
+    padding: 0 0px;
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    top: -50px;
+    z-index: 1;
+    text-align: start;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+.Search__dishes {
+    padding-left: 25px;
+    margin-left: 0%;
+    margin-top: -58px;
+    font-size: 14px;
+    width: 150px;
+    height: 29px;
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    border: orange solid 1px;
+    text-decoration: none;
+}
+
+.Search__dishes::placeholder {
+    padding-top: 8px;
+    padding-left: 0px;
+}
+
+.filter__icon {
+    position: relative;
+    margin-left: 14%;
+    margin-top: -45px;
+    margin-bottom: 27px;
+    font-size: 18px;
+}
+
+.filter__icon2 {
+    position: relative;
+    margin-left: 0%;
+    margin-top: -45px;
+    margin-bottom: 27px;
+    font-size: 18px;
+}
+
+.geolocation__search {
+    position: relative;
+    margin-top: 19px;
+    margin-left: -1%;
+}
+
+.geoloc__background__img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.geoloc__h1 {
+    position: relative;
+    margin-top: -267px;
+    margin-left: 12.65%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 54px;
+    color: white;
+}
+
+.geoloc__textarea {
+    position: absolute;
+    margin-top: -11px;
+    z-index: 0;
+    width: 96%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: white solid 1px;
+}
+
+.geoloc__textarea::placeholder {
+    padding-left: 35%;
+    padding-top: 14px;
+}
+
+.geoloc__textarea__div {
+    position: relative;
+    display: inline-block;
+    margin-left: 17%;
+    width: 66%;
+}
+
+.geoloc__textarea__div:before {
+    content: url("geoloc__icon.png");
+    padding: 0 0px;
+    font-size: 12px;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    z-index: 1;
+    text-align: start;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+.geoloc__textarea__div:after {
+    content: url("geoloc__icon2.png");
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+.geoloc__text{
+    color: white;
+    font-size: 18px;
+    margin-left: 40%;
+    margin-top: 53px;
+    font-style: ITALIC;
+}
+
+.flx__cont {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 110px;
+    margin-left: 21%;
+    width: 60%;
+}
+
+.Meal__type{
+
+}
+
+.Lunch {
+    margin-top: -12px;
+    margin-left: 2%;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+
+.Lunch__div {
+    position: relative;
+    display: inline-block;
+}
+
+.Lunch__div:after {
+    content: url("option__icon.png");
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+select {
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.Chinese {
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    padding-left: 25px;
+}
+
+.Chinese__div {
+    position: relative;
+    display: inline-block;
+}
+
+.Chinese__div:before {
+    content: url("search__icon.png");
+    padding: 0 0px;
+    font-size: 12px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    text-align: start;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+.Chinese__div:after {
+    content: url("option__icon.png");
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+.Non__veg {
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+
+.Non__veg__div {
+    position: relative;
+    display: inline-block;
+}
+
+.Non__veg__div:after {
+    content: url("option__icon.png");
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+
+
+.Select__DC {
+
+}
+
+.Food__Type {
+
+}
+
+.Find__Food {
+    width: 126px;
+    height: 44px;
+    margin-top: 16px;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    background-color: orange;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+}
+
+
+.All__day {
+    margin-top: 59px;
+    margin-left: 5%;
+    font-size: 26px;;
+}
+
+.View__All {
+    margin-top: -44px;
+    margin-left: 88.5%;
+    font-size: 21px;
+    position: relative;
+    color: orange;
+}
+
+.hr {
+    width: 62%;
+    height: 2px;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 23%;
+}
+
+.flx_cont__2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -7px;
+    margin-left: 2%;
+    width: 96%;
+}
+
+.breakfast__layer {
+    width: 100%;
+    height: auto;
+}
+
+.breakfast__opinion {
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.breakfastf__layer2 {
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+.breakfast__opinion2 {
+    position: relative;
+    margin-left: 23%;
+    margin-top: -25px;
+    color: orange;
+    font-size: 18px;
+}
+
+.breakfast__opinion2_2 {
+    position: relative;
+    margin-left: 27%;
+    margin-top: -25px;
+    color: orange;
+    font-size: 18px;
+}
+
+.breakfast__inacetive__deactive__icon {
+    margin-left: 25.9%;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.cash {
+    margin-left: 5%;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.breafast__button {
+    width: 56px;
+    height: 28px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    background-color: orange;
+    position: absolute;
+    margin-top: -51px;
+    margin-left: 23.1%;
+}
+
+.breakfast__inacetive__deactive__icon2 {
+    margin-left: 23.8%;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.breakfast__inacetive__deactive__icon3 {
+    margin-left: 18.3%;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.breakfast__inacetive__deactive__icon4 {
+    margin-left: 20.5%;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.breafast__button2 {
+    width: 56px;
+    height: 28px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    background-color: orange;
+    position: absolute;
+    margin-top: -51px;
+    margin-left: 21%;
+}
+
+.breafast__button3 {
+    width: 56px;
+    height: 28px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    background-color: orange;
+    position: absolute;
+    margin-top: -51px;
+    margin-left: 15.5%;
+}
+
+.breafast__button4 {
+    width: 56px;
+    height: 28px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    background-color: orange;
+    position: absolute;
+    margin-top: -51px;
+    margin-left: 17.8%;
+}
+
+.perez1 {
+    margin-left: 17%;
+    margin-top: -42px;
+    position: absolute;
+}
+
+.perez2 {
+    margin-left: 18.5%;
+    margin-top: -42px;
+    position: absolute;
+}
+
+.flx_cont__3 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.flx_flx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    flex-basis: 200%;
+}
+
+.flx_flx__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.flx_flx__3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.Experience {
+    width: 52%;
+}
+
+.flx_cont__4 {
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100.5%;
+    position: absolute;
+    margin-left: -95%;
+    margin-top: 250px;
+}
+
+.icon__footer {
+    margin-top: 10px;
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon__footer1{
+    width: 21px;
+    height: 21px;
+}
+
+.icon__footer2 {
+    width: 21px;
+    height: 21px;
+}
+
+.icon__footer3 {
+    width: 21px;
+    height: 21px;
+}
+
+.footer__logotype__img {
+    margin-left: -26.5%;
+    margin-top: 27px;
+    width: 184px;
+}
+
+.footer__main__text {
+    flex-basis: 24%;
+    background-color: black;
+}
+
+.Were__a__UI__UX__design__studio {
+    color: white;
+    width: 136%;
+    background-color: black;
+}
+
+.__Designcoz {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.flx_flx__4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+}
+@media screen and (max-width: 1366px) and (min-width: 1100px){
+    .geoloc__h1 {
+        font-size: 48px;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1026px){
+    .geoloc__h1 {
+        font-size: 38px;
+        margin-left: 17%;
+    }
+
+}
+
+@media screen and (max-width: 1026px) and (min-width: 897px){
+    .geoloc__h1 {
+        font-size: 28px;
+        margin-left: 24%;
+        font-weight: 700;
+        margin-top: -23%;
+    }
+
+}
+
+@media screen and (max-width: 897px) and (min-width: 768px){
+    .geoloc__h1 {
+        font-size: 18px;
+        margin-left: 30%;
+        font-weight: 900;
+        margin-top: -23%;
+    }
+
+}
+
+
+@media screen and (max-width: 1026px) and (min-width: 768px) {
+
+    .header__text {
+        margin-left: 88.8%;
+        font-size: 14px;
+    }
+
+    .menu__t__Snacks{
+        margin-left: 15.5%;
+    }
+
+    .menu__t__Combos {
+        margin-left: 24%;
+    }
+
+    .menu__t__Meal {
+        margin-left: 33.5%;
+    }
+
+    .menu__t__Desserts {
+        margin-left: 40%;
+    }
+
+    .search__icon {
+        margin-left: 66%;
+    }
+
+    .Search__dishes__div {
+        margin-left: 60%;
+    }
+
+    .Search__dishes {
+        margin-left: 65%;
+    }
+
+    .filter__icon {
+        margin-left: 88%;
+        margin-top: -64px;
+        margin-bottom: 44px;
+    }
+
+    .filter__icon2 {
+        margin-left: 94%;
+        margin-top: -75px;
+        margin-bottom: 61px;
+    }
+
+    .hr {
+        width: 49%;
+        margin-left: 35%;
+    }
+
+    .flx__cont {
+        margin-left: 10%;
+        margin-top: 125px;
+        margin-bottom: -50px;
+        width: 80%;
+    }
+
+    .breakfast__inacetive__deactive__icon {
+        margin-left: 23.9%;
+    }
+
+    .breafast__button {
+        margin-left: 19.1%;
+    }
+
+    .breakfast__inacetive__deactive__icon2 {
+        margin-left: 21.8%;
+    }
+
+    .breafast__button2 {
+        margin-left: 17%;
+    }
+
+    .breakfast__opinion2 {
+        font-size: 16px;
+    }
+
+    .breakfast__inacetive__deactive__icon3 {
+        margin-top: -37px;
+    }
+
+    .breafast__button3 {
+        margin-left: 13.5%;
+    }
+
+    .breakfast__opinion2_2 {
+        margin-left: 34%;
+    }
+
+    .perez1 {
+        margin-left:14.5%;
+    }
+
+    .perez2 {
+        margin-left: 17.5%;
+    }
+
+    .breafast__button4 {
+        margin-left: 15.8%;
+    }
+
+    .footer__logotype__img {
+        margin-left: 6.5%;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+
+
+    .menu__t__Breakfast{
+        margin-left: 0%;
+        margin-top: 100px;
+    }
+
+    .menu__t__Snacks{
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu__t__Combos {
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu__t__Meal {
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu__t__Desserts {
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .search__icon {
+        margin-left: 32%;
+        margin-top: 10px;
+    }
+
+    .Search__dishes__div {
+        margin-left: 30%;
+        margin-top: 55px;
+    }
+
+    .Search__dishes {
+        margin-left: 31%;
+        margin-top: -58px;
+    }
+
+    .filter__icon {
+        margin-left: 74%;
+        margin-top: -65px;
+        margin-bottom: 45px;
+    }
+
+    .filter__icon2 {
+        margin-left: 81%;
+        margin-top: -76px;
+        margin-bottom: 65px;
+    }
+
+    .header__cart {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        margin-left: 64%;
+        margin-top: 28px;
+        width: 28px;
+    }
+
+    .header__text {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        margin-left: 70.8%;
+        margin-top: 35px;
+        width: auto;
+        color: white;
+        font-size: 16px;
+    }
+
+    .geolocation__search {
+        margin-top: 70px;
+    }
+
+    .geoloc__h1 {
+        font-size: 18px;
+        margin-left: 16%;
+        font-weight: 900;
+        margin-top: -23%;
+    }
+
+    .geoloc__textarea::placeholder {
+        padding-left: 10%;
+        padding-top: 14px;
+    }
+
+    .geoloc__textarea__div:after {
+        right: 30px;
+    }
+
+    .geoloc__text{
+        color: white;
+        font-size: 18px;
+        margin-left: 22%;
+        margin-top: 37px;
+        font-style: ITALIC;
+    }
+
+    .flx__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 167px;
+        margin-left: 32%;
+        width: 60%;
+    }
+
+    .Find__Food {
+        margin-left: 0%;
+    }
+
+    .All__day {
+        margin-top: 59px;
+        margin-left: 5%;
+        font-size: 18px;;
+    }
+
+    .View__All {
+        margin-top: -33px;
+        margin-left: 83.5%;
+        font-size: 18px;
+        position: relative;
+        color: orange;
+    }
+
+    .hr {
+        width: 38%;
+        height: 2px;
+        position: absolute;
+        margin-top: -26px;
+        margin-left: 39%;
+    }
+
+    .flx_cont__2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -7px;
+        margin-left: 2%;
+        width: 96%;
+    }
+
+    .breakfast__inacetive__deactive__icon {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+    .breakfast__inacetive__deactive__icon2 {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+
+    .breakfast__inacetive__deactive__icon3 {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+
+    .breakfast__inacetive__deactive__icon4 {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+
+    .breafast__button {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .breafast__button2 {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .breafast__button3 {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .breafast__button4 {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .perez1 {
+        margin-left: 71.5%;
+        margin-top: -42px;
+        position: absolute;
+    }
+
+    .perez2 {
+        margin-left: 75.5%;
+        margin-top: -42px;
+        position: absolute;
+    }
+
+    .flx_cont__3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .flx_cont__4 {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 104%;
+        position: relative;
+        margin-left: -2%;
+        margin-top: 40px;
+    }
+
+    .footer__logotype__img {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .footer__main__text {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .Were__a__UI__UX__design__studio {
+        color: white;
+        width: 100%;
+        background-color: black;
+    }
+
+    .flx_flx__4 {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 240px) {
+
+
+    .menu__t__Breakfast{
+        margin-left: 0%;
+        margin-top: 100px;
+    }
+
+    .menu__t__Snacks{
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu__t__Combos {
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu__t__Meal {
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu__t__Desserts {
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .search__icon {
+        margin-left: 32%;
+        margin-top: 10px;
+    }
+
+    .Search__dishes__div {
+        position: relative;
+        display: inline-block;
+        margin-left: 31%;
+        margin-top: 55px;
+    }
+
+    .Search__dishes {
+        margin-left: 31%;
+        margin-top: -58px;
+    }
+
+    .filter__icon {
+        margin-left: 83%;
+        margin-top: -65px;
+        margin-bottom: 45px;
+    }
+
+    .filter__icon2 {
+        margin-left: 92%;
+        margin-top: -76px;
+        margin-bottom: 65px;
+    }
+
+    .header__cart {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        margin-left: 64%;
+        margin-top: 28px;
+        width: 28px;
+    }
+
+    .header__text {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        margin-left: 70.8%;
+        margin-top: 35px;
+        width: auto;
+        color: white;
+        font-size: 16px;
+    }
+
+    .geolocation__search {
+        margin-top: 70px;
+    }
+
+
+    .geoloc__h1 {
+         font-size: 14px;
+         margin-left: 16%;
+         font-weight: 900;
+         margin-top: -28%;
+     }
+
+    .geoloc__textarea::placeholder {
+        padding-left: 10%;
+        padding-top: 14px;
+    }
+
+    .geoloc__textarea__div:after {
+         right: 30px;
+    }
+
+    .geoloc__text{
+        color: white;
+        font-size: 14px;
+        margin-left: 22%;
+        margin-top: 35px;
+        font-style: ITALIC;
+    }
+
+    .flx__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 167px;
+        margin-left: 32%;
+        width: 60%;
+    }
+
+    .Find__Food {
+        margin-left: 0%;
+    }
+
+    .All__day {
+        margin-top: 59px;
+        margin-left: 5%;
+        font-size: 18px;;
+    }
+
+    .View__All {
+        margin-top: -33px;
+        margin-left: 83.5%;
+        font-size: 18px;
+        position: relative;
+        color: orange;
+    }
+
+    .hr {
+        width: 38%;
+        height: 2px;
+        position: absolute;
+        margin-top: -26px;
+        margin-left: 39%;
+    }
+
+    .flx_cont__2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -7px;
+        margin-left: 2%;
+        width: 96%;
+    }
+
+    .breakfast__inacetive__deactive__icon {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+    .breakfast__inacetive__deactive__icon2 {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+
+    .breakfast__inacetive__deactive__icon3 {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+
+    .breakfast__inacetive__deactive__icon4 {
+        margin-left: 80.9%;
+        margin-top: -40px;
+        position: absolute;
+    }
+
+    .breafast__button {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .breafast__button2 {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .breafast__button3 {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .breafast__button4 {
+        width: 56px;
+        height: 28px;
+        border-style: solid;
+        border-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+        background-color: orange;
+        position: absolute;
+        margin-top: -51px;
+        margin-left: 73%;
+    }
+
+    .perez1 {
+        margin-left: 71.5%;
+        margin-top: -42px;
+        position: absolute;
+    }
+
+    .perez2 {
+        margin-left: 75.5%;
+        margin-top: -42px;
+        position: absolute;
+    }
+
+    .flx_cont__3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .flx_cont__4 {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 104%;
+        position: relative;
+        margin-left: -2%;
+        margin-top: 40px;
+    }
+
+    .footer__logotype__img {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .footer__main__text {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .Were__a__UI__UX__design__studio {
+        color: white;
+        width: 100%;
+        background-color: black;
+    }
+
+    .flx_flx__4 {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 50px;
+    }
+}
