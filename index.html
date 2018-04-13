@@ -5,17 +5,6 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="play-master/dist/plyr.css">
-    <style>
-        input[pseudo="-webkit-media-controls-timeline"]::-internal-track-segment-highlight-after{
-    background-color: red;
-}
-
-input[pseudo="-webkit-media-controls-volume-slider"]::-internal-track-segment-highlight-after {
-    background-color: red;
-}
-
-.plyr--full-ui input[type=range].plyr__tab-focus::-ms-track{box-shadow:0 0 0 3px red;outline:0}
-    </style>
 </head>
 <body>
     <div class="header">
@@ -24,9 +13,6 @@ input[pseudo="-webkit-media-controls-volume-slider"]::-internal-track-segment-hi
         <p class="header__text" id="Hello">Hello, world!</p>
         
     </div>
-    <video style="margin: 0" width="100%" height="auto" poster="" id="player" playsinline controls>
-        <source src="111.mp4" type="video/mp4">
-    </video>
     <div>
         <p class="menu__t__Breakfast"><span class="sp"><a target="_blank" href="#">Breakfast</a></span></p>
         <p class="menu__t__Snacks"><a target="_blank" href="#">Snacks</a></p>
@@ -177,7 +163,5 @@ input[pseudo="-webkit-media-controls-volume-slider"]::-internal-track-segment-hi
         </div>
     </div>
     <script src="common.js"></script>
-    <script>const player = new Plyr('#player');</script>
-    <script src="play-master/dis/play.js"></script>
 </body>
 </html>
