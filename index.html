@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="play-master/dist/plyr.css">
+    <style>
+        input[pseudo="-webkit-media-controls-timeline"]::-internal-track-segment-highlight-after{
+    background-color: red;
+}
+
+input[pseudo="-webkit-media-controls-volume-slider"]::-internal-track-segment-highlight-after {
+    background-color: red;
+}
+
+.plyr--full-ui input[type=range].plyr__tab-focus::-ms-track{box-shadow:0 0 0 3px red;outline:0}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="header__logotype__img" src="header__logotype__img.jpg">
+        <button class="header__cart" onclick="btn1()"><img  src="header__cart.jpg"></button>
+        <p class="header__text" id="Hello">Hello, world!</p>
+        
+    </div>
+    <video style="margin: 0" width="100%" height="auto" poster="" id="player" playsinline controls>
+        <source src="111.mp4" type="video/mp4">
+    </video>
+    <div>
+        <p class="menu__t__Breakfast"><span class="sp"><a target="_blank" href="#">Breakfast</a></span></p>
+        <p class="menu__t__Snacks"><a target="_blank" href="#">Snacks</a></p>
+        <p class="menu__t__Combos"><a target="_blank" href="#">Combos</a></p>
+        <p class="menu__t__Meal"><a target="_blank" href="#">Meal</a></p>
+        <p class="menu__t__Desserts"><a target="_blank" href="#">Desserts</a></p>
+        <div class="Search__dishes__div">
+        <input class="Search__dishes" placeholder="Search dishes"></input>
+        </div>
+        <img class="filter__icon" src="filter__icon.jpg">
+        <img  class="filter__icon2" src="filter__icon2.jpg">
+    </div>
+    <div class="geolocation__search">
+        <img class="geoloc__background__img" src="geoloc__background__img.jpg">
+        <h1 class="geoloc__h1">Homemade Food Just a Click Away</h1>
+        <div class="geoloc__textarea__div">
+            <input class="geoloc__textarea" placeholder="Enter Stree and City"></input>
+        </div>
+        <p class="geoloc__text">Enter your location to view menu</p>
+    </div>
+    <div class="flx__cont">
+        <div class="Meal__type">
+            <p>Meal Type</p>
+            <form>
+                <div class="Lunch__div">
+                <select class="Lunch">
+                    <option>Lunch</option>
+                    <option>Breakfast</option>
+                    <option>Desert</option>
+                    <option>Meal</option>
+                    <option>All</option>
+                </select>
+                </div>
+            </form>
+        </div>
+        <div class="Select__DC">
+            <p>Select Dish/Cuisine</p>
+            <form>
+                <div class="Chinese__div">
+                <select class="Chinese">
+                    <option>Russia</option>
+                    <option>China</option>
+                    <option>English</option>
+                    <option>All</option>
+                </select>
+                </div>
+            </form>
+        </div>
+        <div class="Food__Type">
+            <p>Food Type</p>
+            <form>
+            <div class="Non__veg__div">
+            <select class="Non__veg">
+                <option>Non-veg</option>
+                <option>Veg</option>
+                <option>All</option>
+            </select>
+            </div>
+        </form>
+        </div>
+        <div>
+            <button class="Find__Food">Find Food</button>
+        </div>
+    </div>
+    <div>
+        <h1 class="All__day">All-Day Breakfast</h1>
+        <hr class="hr">
+        <p class="View__All">View All</p>
+    </div>
+    <div class="flx_cont__2">
+        <div>
+            <img class="breakfast__layer" src="bf_1_layer.jpg">
+            <p class="breakfast__opinion" id="bf1">Gajar Ka Halwa with Crackling Dry Fruits</p>
+            <img class="breakfastf__layer2" src="bf_1_layer_2.jpg">
+            <p class="breakfast__opinion2">Ashish Soni</p>
+            <img class="breakfast__inacetive__deactive__icon" src="bf_1_icon.jpg">
+            <p class="cash" id="cash1">60.00</p>
+            <button class="breafast__button" id="add1" onclick="Add1()">Add</button>
+        </div>
+        <div>
+            <img class="breakfast__layer" src="bf_2_layer.jpg">
+            <p class="breakfast__opinion" id="bf2">Punjabi Dhaba Style Chicken Curry with Rice</p>
+            <img class="breakfastf__layer2" src="bf_2_layer_2.jpg">
+            <p class="breakfast__opinion2">Ravisha Sharma</p>
+            <img class="breakfast__inacetive__deactive__icon2" src="bf_2_icon.jpg">
+            <p class="cash" id="cash2">80.00</p>
+            <button class="breafast__button2" id="add2" onclick="Add2()">Add</button>
+        </div>
+        <div>
+            <img class="breakfast__layer" src="bf_3_layer.jpg">
+            <p class="breakfast__opinion" id="bf3">Veg.Laziz with 4 Parathas</p><br>
+            <img class="breakfastf__layer2" src="bf_3_layer_2.jpg">
+            <p class="breakfast__opinion2">Samina Qureshi</p>
+            <img class="breakfast__inacetive__deactive__icon3" src="bf_2_icon.jpg">
+            <p class="cash" id="cash3">50.00</p>
+            <button class="breafast__button3" id="add3" onclick="Add3()">Add</button>
+        </div>
+        <div>
+            <img class="breakfast__layer" src="bf_4_layer.jpg">
+            <p class="breakfast__opinion" id="bf4">Paneer Hariyali Tikka with Green Chutney</p>
+            <img class="breakfastf__layer2" src="bf_4_layer_2.jpg">
+            <p class="breakfast__opinion2_2">Aum</p>
+            <img class="perez1" src="bf_4_icon_2.jpg">
+            <img class="perez2" src="bf_4_icon_2.jpg">
+            <img class="breakfast__inacetive__deactive__icon4" src="bf_1_icon.jpg">
+            <p class="cash" id="cash4">175.00</p>
+            <button class="breafast__button4" id="add4" onclick="Add4()">Add</button>
+        </div>
+    </div>
+    <div class="flx_cont__3">
+        <div>
+            <img src="pribor.jpg">
+        </div>
+        <div class="flx_flx">
+            <h2>FREE FOOD DELIVERY</h2>
+            <p class="Experience">Experience our superfast delivery for food delivered fresh & on time!</p>
+            <p><a target="_blank" href="#">Learn more</a></p>
+        </div>
+        <div class="flx_flx__2">
+            <h2><a target="_blank" href="#">COMPANY</a></h2>
+            <p><a target="_blank" href="#">About Us</a></p>
+            <p><a target="_blank" href="#">Partner with us</a></p>
+            <p><a target="_blank" href="#">Team</a></p>
+        </div>
+        <div class="flx_flx__3">
+            <h2><a target="_blank" href="#">Support</a></h2>
+            <p><a target="_blank" href="#">Contact</a></p>
+            <p><a target="_blank" href="#">Forums</a></p>
+            <p><a target="_blank" href="#">Blog</a></p>
+        </div>
+    </div>
+    <div class="flx_cont__4">
+        <div>
+            <img class="footer__logotype__img" src="header__logotype__img.jpg">
+        </div>
+        <div class="footer__main__text">
+            <p class="Were__a__UI__UX__design__studio">We're a UI+UX design studio that creates all things digital like mobile apps, websites,enterprise applications, marketing campaigns, software (and much more) with people across the world.</p>
+        </div>
+        <div class="flx_flx__4">
+            <div class="icon__footer">
+                <img class="icon__footer1" src="icon__footer1.jpg">
+                <img class="icon__footer2" src="icon__footer2.jpg">
+                <img class="icon__footer3" src="icon__footer3.jpg">
+            </div>
+            <div>
+                <p class="__Designcoz">© 2018 Designcoz</p>
+            </div>
+        </div>
+    </div>
+    <script src="common.js"></script>
+    <script>const player = new Plyr('#player');</script>
+    <script src="play-master/dis/play.js"></script>
+</body>
+</html>
