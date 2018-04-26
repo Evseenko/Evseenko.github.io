@@ -1,0 +1,3 @@
+User-agent: YandexBot
+Allow: /
+sitemap: evseenko.github.io/sitemap.xml
