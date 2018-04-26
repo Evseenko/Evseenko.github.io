@@ -5,3 +5,11 @@ sitemap: https://evseenko.github.io/sitemap.xml
 User-agent: Yandex
 Allow: /index.html
 sitemap: https://evseenko.github.io/sitemap.xml
+
+User-agent: Googlebot
+Allow: /index.html
+sitemap: https://evseenko.github.io/sitemap.xml
+
+User-agent: Google
+Allow: /index.html
+sitemap: https://evseenko.github.io/sitemap.xml
